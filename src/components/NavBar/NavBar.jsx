@@ -3,9 +3,11 @@ import styles from "./NavBar.module.css";
 
 export default function NavBar() {
   return (
-    <nav className="text-white fixed top-0 left-0 right-0 p-4 z-50">
+    <nav
+      className={`${styles.nav} text-white fixed top-0 left-0 right-0 p-4 z-50`}
+    >
       <ul className="flex justify-around">
-        <li className="mr-96">
+        <li className={` ${styles.li}  mr-96`}>
           <Link
             className="text-white hover:text-white text-3xl font-bold w-max flex"
             to={""}
@@ -13,7 +15,7 @@ export default function NavBar() {
             START FRAMEWORK
           </Link>
         </li>
-        <li>
+        <li className={` ${styles.li} `}>
           <NavLink
             className="text-white hover:text-white text-lg rounded-md p-2"
             to={"about"}
@@ -21,7 +23,7 @@ export default function NavBar() {
             ABOUT
           </NavLink>
         </li>
-        <li>
+        <li className={` ${styles.li} `}>
           <NavLink
             className="text-white hover:text-white text-lg rounded-md p-2"
             to={"portfolio"}
@@ -29,7 +31,7 @@ export default function NavBar() {
             PORTFOLIO
           </NavLink>
         </li>
-        <li className="mr-16">
+        <li className={` ${styles.li}  mr-16`}>
           <NavLink
             className="text-white hover:text-white text-lg rounded-md p-2"
             to={"contact"}

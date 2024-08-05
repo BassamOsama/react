@@ -1,7 +1,7 @@
 import styles from "./Footer.module.css";
 export default function Footer() {
   return (
-    <footer className="text-white bottom-0 left-0 right-0 ">
+    <footer className={`${styles.footer} text-white bottom-0 left-0 right-0 `}>
       <div className="p-12">
         <div className="card-group flex ml-20">
           <div className="card flex w-1/3">
